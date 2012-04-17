@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AVCam.xcscheme</key>
+		<key>OpenCVTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D6058900D05DD3D006BFB54</key>
+		<key>540723D90E3DD25B00B598A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
