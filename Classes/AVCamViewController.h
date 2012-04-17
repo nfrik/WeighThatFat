@@ -1,6 +1,6 @@
 /*
-     File: main.m
- Abstract: The main entry point to create the application object and set up the event cycle.
+     File: AVCamViewController.h
+ Abstract: A view controller that coordinates the transfer of information between the user interface and the capture manager.
   Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -46,11 +46,29 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "PhotoPreviewController.h"
 
-int main(int argc, char *argv[]) {
+@class AVCamCaptureManager, AVCamPreviewView, AVCaptureVideoPreviewLayer;
+
+@interface AVCamViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
     
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+    PhotoPreviewController *photoProcessView;
 }
+
+@property (nonatomic,retain) PhotoPreviewController *photoProcessView;
+@property (nonatomic,retain) AVCamCaptureManager *captureManager;
+@property (nonatomic,retain) IBOutlet UIView *videoPreviewView;
+@property (nonatomic,retain) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
+@property (nonatomic,retain) IBOutlet UIBarButtonItem *cameraToggleButton;
+@property (nonatomic,retain) IBOutlet UIBarButtonItem *recordButton;
+@property (nonatomic,retain) IBOutlet UIBarButtonItem *stillButton;
+@property (nonatomic,retain) IBOutlet UILabel *focusModeLabel;
+
+
+#pragma mark Toolbar Actions
+- (IBAction)toggleRecording:(id)sender;
+- (IBAction)captureStillImage:(id)sender;
+- (IBAction)toggleCamera:(id)sender;
+
+@end
+

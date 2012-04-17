@@ -1,6 +1,6 @@
 /*
-     File: main.m
- Abstract: The main entry point to create the application object and set up the event cycle.
+     File: AVCamUtilities.h
+ Abstract: A utility class containing a method to find an AVCaptureConnection of a particular media type from an array of AVCaptureConnections.
   Version: 1.2
  
  Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
@@ -45,12 +45,14 @@
  
  */
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-int main(int argc, char *argv[]) {
-    
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+@class AVCaptureConnection;
+
+@interface AVCamUtilities : NSObject {
+
 }
+
++ (AVCaptureConnection *)connectionWithMediaType:(NSString *)mediaType fromConnections:(NSArray *)connections;
+
+@end
