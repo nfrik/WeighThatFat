@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		540723DB0E3DD25B00B598A2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		540723DC0E3DD25B00B598A2 /* lena.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5452E0090E3D08AA00FE4518 /* lena.jpg */; };
 		540723DE0E3DD25B00B598A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		540723DF0E3DD25B00B598A2 /* OpenCVTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OpenCVTestAppDelegate.m */; };
 		540723E00E3DD25B00B598A2 /* OpenCVTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* OpenCVTestViewController.m */; };
@@ -20,10 +19,17 @@
 		543DC7881323FD1300AB7DCD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543DC7871323FD1300AB7DCD /* Default@2x.png */; };
 		543DC78A1323FD1C00AB7DCD /* Icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 543DC7891323FD1C00AB7DCD /* Icon_72.png */; };
 		549913C70E3E3D2100BD1311 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 549913C60E3E3D2100BD1311 /* Default.png */; };
-		54BBAF3D0F04148D00568ED9 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 54BBAF3C0F04148D00568ED9 /* Tink.aiff */; };
 		54BBAF4F0F0414C200568ED9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BBAF4E0F0414C200568ED9 /* AudioToolbox.framework */; };
 		54ED862C123C4A8B00ED9656 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ED862B123C4A8B00ED9656 /* Accelerate.framework */; };
-		54FC5BDE0E3EB3EB00F48645 /* laughing_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 54FC5BDD0E3EB3EB00F48645 /* laughing_man.png */; };
+		B5BA7157153D4A470046EB92 /* OpenCVTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BA7156153D4A470046EB92 /* OpenCVTestViewController.xib */; };
+		B5BA715E153D4CC00046EB92 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA7159153D4CC00046EB92 /* HomeController.m */; };
+		B5BA715F153D4CC00046EB92 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BA715A153D4CC00046EB92 /* HomeController.xib */; };
+		B5BA7160153D4CC00046EB92 /* TutorialController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BA715C153D4CC00046EB92 /* TutorialController.m */; };
+		B5BA7161153D4CC00046EB92 /* TutorialController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BA715D153D4CC00046EB92 /* TutorialController.xib */; };
+		B5BA7163153D4D2D0046EB92 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7162153D4D2D0046EB92 /* CoreMotion.framework */; };
+		B5BA7165153D4D5A0046EB92 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BA7164153D4D5A0046EB92 /* QuartzCore.framework */; };
+		B5BA7168153D4F600046EB92 /* Pig.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BA7166153D4F600046EB92 /* Pig.png */; };
+		B5BA7169153D4F600046EB92 /* pointing_finger.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BA7167153D4F600046EB92 /* pointing_finger.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,20 +41,28 @@
 		28D7ACF60DDB3853001CB0EB /* OpenCVTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVTestViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* OpenCVTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenCVTestViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* OpenCVTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVTest_Prefix.pch; sourceTree = "<group>"; };
-		540723ED0E3DD25B00B598A2 /* OpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CA4F630368D1EE00C91783 /* WeighThatFat_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeighThatFat_Prefix.pch; sourceTree = "<group>"; };
+		540723ED0E3DD25B00B598A2 /* WeighThatFat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeighThatFat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540ABCF50E3E280700E30885 /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_57.png; sourceTree = "<group>"; };
 		543DC7631323FA0C00AB7DCD /* Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_114.png; sourceTree = "<group>"; };
 		543DC7871323FD1300AB7DCD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		543DC7891323FD1C00AB7DCD /* Icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_72.png; sourceTree = "<group>"; };
-		5452E0090E3D08AA00FE4518 /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena.jpg; sourceTree = "<group>"; };
 		5452E0730E3D119700FE4518 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		549913C60E3E3D2100BD1311 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		54BBAF3C0F04148D00568ED9 /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
 		54BBAF4E0F0414C200568ED9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		54ED862B123C4A8B00ED9656 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		54FC5BDD0E3EB3EB00F48645 /* laughing_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laughing_man.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BA7156153D4A470046EB92 /* OpenCVTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OpenCVTestViewController.xib; path = Resources/OpenCVTestViewController.xib; sourceTree = SOURCE_ROOT; };
+		B5BA7158153D4CC00046EB92 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		B5BA7159153D4CC00046EB92 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		B5BA715A153D4CC00046EB92 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		B5BA715B153D4CC00046EB92 /* TutorialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialController.h; sourceTree = "<group>"; };
+		B5BA715C153D4CC00046EB92 /* TutorialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialController.m; sourceTree = "<group>"; };
+		B5BA715D153D4CC00046EB92 /* TutorialController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorialController.xib; sourceTree = "<group>"; };
+		B5BA7162153D4D2D0046EB92 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B5BA7164153D4D5A0046EB92 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5BA7166153D4F600046EB92 /* Pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pig.png; sourceTree = "<group>"; };
+		B5BA7167153D4F600046EB92 /* pointing_finger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointing_finger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BA7165153D4D5A0046EB92 /* QuartzCore.framework in Frameworks */,
+				B5BA7163153D4D2D0046EB92 /* CoreMotion.framework in Frameworks */,
 				540723E20E3DD25B00B598A2 /* Foundation.framework in Frameworks */,
 				540723E30E3DD25B00B598A2 /* UIKit.framework in Frameworks */,
 				540723E40E3DD25B00B598A2 /* CoreGraphics.framework in Frameworks */,
@@ -70,10 +86,17 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA7158153D4CC00046EB92 /* HomeController.h */,
+				B5BA7159153D4CC00046EB92 /* HomeController.m */,
+				B5BA715A153D4CC00046EB92 /* HomeController.xib */,
+				B5BA715B153D4CC00046EB92 /* TutorialController.h */,
+				B5BA715C153D4CC00046EB92 /* TutorialController.m */,
+				B5BA715D153D4CC00046EB92 /* TutorialController.xib */,
 				1D3623240D0F684500981E51 /* OpenCVTestAppDelegate.h */,
 				1D3623250D0F684500981E51 /* OpenCVTestAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* OpenCVTestViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* OpenCVTestViewController.m */,
+				B5BA7156153D4A470046EB92 /* OpenCVTestViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -81,7 +104,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				540723ED0E3DD25B00B598A2 /* OpenCVTest.app */,
+				540723ED0E3DD25B00B598A2 /* WeighThatFat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* Info.plist */,
-				32CA4F630368D1EE00C91783 /* OpenCVTest_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* WeighThatFat_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -112,15 +135,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA7166153D4F600046EB92 /* Pig.png */,
+				B5BA7167153D4F600046EB92 /* pointing_finger.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				549913C60E3E3D2100BD1311 /* Default.png */,
 				543DC7871323FD1300AB7DCD /* Default@2x.png */,
 				540ABCF50E3E280700E30885 /* Icon_57.png */,
 				543DC7891323FD1C00AB7DCD /* Icon_72.png */,
 				543DC7631323FA0C00AB7DCD /* Icon_114.png */,
-				5452E0090E3D08AA00FE4518 /* lena.jpg */,
-				54FC5BDD0E3EB3EB00F48645 /* laughing_man.png */,
-				54BBAF3C0F04148D00568ED9 /* Tink.aiff */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,6 +150,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5BA7164153D4D5A0046EB92 /* QuartzCore.framework */,
+				B5BA7162153D4D2D0046EB92 /* CoreMotion.framework */,
 				54BBAF4E0F0414C200568ED9 /* AudioToolbox.framework */,
 				5452E0730E3D119700FE4518 /* CoreGraphics.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -147,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		540723D90E3DD25B00B598A2 /* OpenCVTest */ = {
+		540723D90E3DD25B00B598A2 /* WeighThatFat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 540723EA0E3DD25B00B598A2 /* Build configuration list for PBXNativeTarget "OpenCVTest" */;
+			buildConfigurationList = 540723EA0E3DD25B00B598A2 /* Build configuration list for PBXNativeTarget "WeighThatFat" */;
 			buildPhases = (
 				540723DA0E3DD25B00B598A2 /* Resources */,
 				540723DD0E3DD25B00B598A2 /* Sources */,
@@ -159,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenCVTest;
+			name = WeighThatFat;
 			productName = OpenCVTest;
-			productReference = 540723ED0E3DD25B00B598A2 /* OpenCVTest.app */;
+			productReference = 540723ED0E3DD25B00B598A2 /* WeighThatFat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +193,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OpenCVTest" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WeighThatFat" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -183,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				540723D90E3DD25B00B598A2 /* OpenCVTest */,
+				540723D90E3DD25B00B598A2 /* WeighThatFat */,
 			);
 		};
 /* End PBXProject section */
@@ -194,14 +218,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				540723DB0E3DD25B00B598A2 /* MainWindow.xib in Resources */,
-				540723DC0E3DD25B00B598A2 /* lena.jpg in Resources */,
 				540ABCF60E3E280700E30885 /* Icon_57.png in Resources */,
 				549913C70E3E3D2100BD1311 /* Default.png in Resources */,
-				54FC5BDE0E3EB3EB00F48645 /* laughing_man.png in Resources */,
-				54BBAF3D0F04148D00568ED9 /* Tink.aiff in Resources */,
 				543DC7641323FA0C00AB7DCD /* Icon_114.png in Resources */,
 				543DC7881323FD1300AB7DCD /* Default@2x.png in Resources */,
 				543DC78A1323FD1C00AB7DCD /* Icon_72.png in Resources */,
+				B5BA7157153D4A470046EB92 /* OpenCVTestViewController.xib in Resources */,
+				B5BA715F153D4CC00046EB92 /* HomeController.xib in Resources */,
+				B5BA7161153D4CC00046EB92 /* TutorialController.xib in Resources */,
+				B5BA7168153D4F600046EB92 /* Pig.png in Resources */,
+				B5BA7169153D4F600046EB92 /* pointing_finger.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +241,8 @@
 				540723DE0E3DD25B00B598A2 /* main.m in Sources */,
 				540723DF0E3DD25B00B598A2 /* OpenCVTestAppDelegate.m in Sources */,
 				540723E00E3DD25B00B598A2 /* OpenCVTestViewController.m in Sources */,
+				B5BA715E153D4CC00046EB92 /* HomeController.m in Sources */,
+				B5BA7160153D4CC00046EB92 /* TutorialController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,18 +257,18 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = OpenCVTest_Prefix.pch;
+				GCC_PREFIX_HEADER = WeighThatFat_Prefix.pch;
 				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/opencv_device/include\"";
 				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/opencv_simulator/include\"";
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/opencv_device/lib\"";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/opencv_simulator/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "";
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_NAME = OpenCVTest;
+				PRODUCT_NAME = WeighThatFat;
 			};
 			name = Debug;
 		};
@@ -250,18 +278,18 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = OpenCVTest_Prefix.pch;
+				GCC_PREFIX_HEADER = WeighThatFat_Prefix.pch;
 				"HEADER_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/opencv_device/include\"";
 				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/opencv_simulator/include\"";
 				INFOPLIST_FILE = Info.plist;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "\"$(SRCROOT)/opencv_device/lib\"";
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "\"$(SRCROOT)/opencv_simulator/lib\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=*]" = "";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*][arch=*]" = "";
 				OTHER_LDFLAGS = (
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_NAME = OpenCVTest;
+				PRODUCT_NAME = WeighThatFat;
 			};
 			name = Release;
 		};
@@ -297,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		540723EA0E3DD25B00B598A2 /* Build configuration list for PBXNativeTarget "OpenCVTest" */ = {
+		540723EA0E3DD25B00B598A2 /* Build configuration list for PBXNativeTarget "WeighThatFat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540723EB0E3DD25B00B598A2 /* Debug */,
@@ -306,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OpenCVTest" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WeighThatFat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

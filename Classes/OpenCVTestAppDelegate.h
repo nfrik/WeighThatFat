@@ -1,12 +1,13 @@
 #import <UIKit/UIKit.h>
 
-@class OpenCVTestViewController;
+@class HomeController;
 
 @interface OpenCVTestAppDelegate : NSObject <UIApplicationDelegate> {
     IBOutlet UIWindow *window;
-    IBOutlet OpenCVTestViewController *viewController;
+    IBOutlet HomeController *viewController;
 }
 
 @property (nonatomic, retain) UIWindow *window;
-@property (nonatomic, retain) OpenCVTestViewController *viewController;
+@property (nonatomic, retain) HomeController *viewController;
+@property (nonatomic, retain) UINavigationController *navigationController;
 @end

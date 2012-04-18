@@ -6,6 +6,15 @@
 @implementation OpenCVTestViewController
 @synthesize imageView;
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)dealloc {
 	AudioServicesDisposeSystemSoundID(alertSoundID);
 	[imageView dealloc];
@@ -75,7 +84,7 @@
 		[progressHUD release];
 		progressHUD = nil;
 
-		AudioServicesPlaySystemSound(alertSoundID);
+		//AudioServicesPlaySystemSound(alertSoundID);
 	}
 }
 
@@ -228,10 +237,10 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:YES];
-	[self loadImage:nil];
+	//[self loadImage:nil];
 
-	NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Tink" ofType:@"aiff"] isDirectory:NO];
-	AudioServicesCreateSystemSoundID((CFURLRef)url, &alertSoundID);
+	//NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Tink" ofType:@"aiff"] isDirectory:NO];
+	//AudioServicesCreateSystemSoundID((CFURLRef)url, &alertSoundID);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
