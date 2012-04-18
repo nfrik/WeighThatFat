@@ -15,6 +15,7 @@
 			<string>IBUIBarButtonItem</string>
 			<string>IBUIToolbar</string>
 			<string>IBUIView</string>
+			<string>IBUILabel</string>
 			<string>IBProxyObject</string>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -46,6 +47,7 @@
 						<string key="NSFrame">{{0, 416}, {320, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -94,9 +96,46 @@
 					<object class="IBUIView" id="197392939">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">274</int>
+						<object class="NSMutableArray" key="NSSubviews">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBUILabel" id="108882553">
+								<reference key="NSNextResponder" ref="197392939"/>
+								<int key="NSvFlags">292</int>
+								<string key="NSFrame">{{20, 385}, {280, 21}}</string>
+								<reference key="NSSuperview" ref="197392939"/>
+								<reference key="NSWindow"/>
+								<string key="NSReuseIdentifierKey">_NS:328</string>
+								<bool key="IBUIOpaque">NO</bool>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<int key="IBUIContentMode">7</int>
+								<bool key="IBUIUserInteractionEnabled">NO</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIText">Angle</string>
+								<object class="NSColor" key="IBUITextColor">
+									<int key="NSColorSpace">1</int>
+									<bytes key="NSRGB">MSAxIDEAA</bytes>
+									<object class="NSColorSpace" key="NSCustomColorSpace">
+										<int key="NSID">1</int>
+									</object>
+								</object>
+								<nil key="IBUIHighlightedColor"/>
+								<int key="IBUIBaselineAdjustment">1</int>
+								<float key="IBUIMinimumFontSize">10</float>
+								<object class="IBUIFontDescription" key="IBUIFontDescription">
+									<int key="type">1</int>
+									<double key="pointSize">17</double>
+								</object>
+								<object class="NSFont" key="IBUIFont">
+									<string key="NSName">Helvetica</string>
+									<double key="NSSize">17</double>
+									<int key="NSfFlags">16</int>
+								</object>
+							</object>
+						</object>
 						<string key="NSFrameSize">{320, 416}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="916136312"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -107,6 +146,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="197392939"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MC43NQA</bytes>
@@ -145,6 +185,14 @@
 						<reference key="destination" ref="769371468"/>
 					</object>
 					<int key="connectionID">298</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">infoLabel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="108882553"/>
+					</object>
+					<int key="connectionID">303</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -217,6 +265,7 @@
 						<reference key="object" ref="197392939"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="108882553"/>
 						</object>
 						<reference key="parent" ref="774585933"/>
 					</object>
@@ -245,6 +294,11 @@
 						<reference key="object" ref="85766794"/>
 						<reference key="parent" ref="916136312"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">302</int>
+						<reference key="object" ref="108882553"/>
+						<reference key="parent" ref="197392939"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -261,6 +315,7 @@
 					<string>289.IBPluginDependency</string>
 					<string>291.IBPluginDependency</string>
 					<string>292.IBPluginDependency</string>
+					<string>302.IBPluginDependency</string>
 					<string>38.IBPluginDependency</string>
 					<string>46.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
@@ -271,6 +326,7 @@
 					<string>AVCamViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>UIResponder</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -296,7 +352,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">301</int>
+			<int key="maxID">303</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -349,6 +405,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>cameraToggleButton</string>
 							<string>focusModeLabel</string>
+							<string>infoLabel</string>
 							<string>recordButton</string>
 							<string>stillButton</string>
 							<string>videoPreviewView</string>
@@ -356,6 +413,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIBarButtonItem</string>
+							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UIBarButtonItem</string>
 							<string>UIBarButtonItem</string>
@@ -368,6 +426,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>cameraToggleButton</string>
 							<string>focusModeLabel</string>
+							<string>infoLabel</string>
 							<string>recordButton</string>
 							<string>stillButton</string>
 							<string>videoPreviewView</string>
@@ -380,6 +439,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">focusModeLabel</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">infoLabel</string>
 								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">

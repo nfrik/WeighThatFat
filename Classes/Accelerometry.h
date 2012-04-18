@@ -51,9 +51,6 @@
 
 
 @property (nonatomic,retain) UIAccelerometer *accelerometer;
-@property (nonatomic,retain) NSArray *aXarray;
-@property (nonatomic,retain) NSArray *aYarray;
-@property (nonatomic,retain) NSArray *aZarray;
 @property (assign) CGFloat X;
 @property (assign) CGFloat Y;
 @property (assign) CGFloat Z;

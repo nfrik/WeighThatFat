@@ -75,6 +75,8 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 @synthesize focusModeLabel;
 @synthesize videoPreviewView;
 @synthesize captureVideoPreviewLayer;
+@synthesize infoLabel;
+@synthesize gyroTimer;
 
 - (NSString *)stringForFocusMode:(AVCaptureFocusMode)focusMode
 {
@@ -179,6 +181,27 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 		}		
 	}
 		
+    
+    
+    //--------------------------------    
+    //init gyroscope
+    //--------------------------------
+    
+    motionManager = [[CMMotionManager alloc] init];    
+    CMDeviceMotion *deviceMotion = motionManager.deviceMotion;      
+    CMAttitude *attitude = deviceMotion.attitude;
+    referenceAttitude = [attitude retain];
+    motionManager.gyroUpdateInterval=0.005;
+    [motionManager startDeviceMotionUpdatesUsingReferenceFrame:CMAttitudeReferenceFrameXMagneticNorthZVertical];                      
+    [motionManager startGyroUpdates]; 
+    
+    [self startTimer];
+    
+    //--------------------------------
+    //--------------------------------
+
+    
+    
     [super viewDidLoad];
 }
 
@@ -412,5 +435,21 @@ static void *AVCamFocusModeObserverContext = &AVCamFocusModeObserverContext;
 {
 	[self updateButtonStates];
 }
+
+#pragma mark timer Actions
+-(void)startTimer{
+    gyroTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timerMethod:) userInfo:nil repeats:YES];    
+}
+
+-(void)stopTimer{
+    [[self gyroTimer] invalidate];
+    gyroTimer=nil;
+}
+
+-(void)timerMethod:(NSTimer *)theTimer{
+    infoLabel.text=[NSString stringWithFormat:@"Angle = %2.2f°",motionManager.deviceMotion.attitude.pitch*180/M_PI];    
+}
+
+
 
 @end

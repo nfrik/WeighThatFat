@@ -57,9 +57,9 @@
     //Save timestamp
     lastTimeStamp=acceleration.timestamp;
     //
-    AX=motionManager.deviceMotion.userAcceleration.x*9.81;
-    AY=motionManager.deviceMotion.userAcceleration.y*9.81;
-    AZ=motionManager.deviceMotion.userAcceleration.z*9.81;
+    AX=motionManager.deviceMotion.userAcceleration.x*9.80665;
+    AY=motionManager.deviceMotion.userAcceleration.y*9.80665;
+    AZ=motionManager.deviceMotion.userAcceleration.z*9.80665;
     VX+=AX*dt;
     VY+=AY*dt;
     VZ+=AZ*dt;
@@ -103,7 +103,7 @@
 #pragma - Gyroscope Setup
 
 -(void) enableGyro{
-    CMDeviceMotion *deviceMotion = motionManager.deviceMotion;      
+    CMDeviceMotion *deviceMotion = motionManager.deviceMotion;
     CMAttitude *attitude = deviceMotion.attitude;
     referenceAttitude = [attitude retain];
     //[motionManager startGyroUpdates];

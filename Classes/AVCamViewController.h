@@ -47,12 +47,15 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoPreviewController.h"
+#import <CoreMotion/CoreMotion.h>
 
 @class AVCamCaptureManager, AVCamPreviewView, AVCaptureVideoPreviewLayer;
 
-@interface AVCamViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate> {
+@interface AVCamViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIAccelerometerDelegate> {
     
     PhotoPreviewController *photoProcessView;
+    CMMotionManager* motionManager;
+    CMAttitude* referenceAttitude; 
 }
 
 @property (nonatomic,retain) PhotoPreviewController *photoProcessView;
@@ -63,12 +66,20 @@
 @property (nonatomic,retain) IBOutlet UIBarButtonItem *recordButton;
 @property (nonatomic,retain) IBOutlet UIBarButtonItem *stillButton;
 @property (nonatomic,retain) IBOutlet UILabel *focusModeLabel;
+@property (nonatomic,retain) IBOutlet UILabel *infoLabel;
+@property (nonatomic,retain) NSTimer *gyroTimer;
+
 
 
 #pragma mark Toolbar Actions
 - (IBAction)toggleRecording:(id)sender;
 - (IBAction)captureStillImage:(id)sender;
 - (IBAction)toggleCamera:(id)sender;
+
+#pragma mark timer Actions
+-(void)startTimer;
+-(void)stopTimer;
+-(void)timerMethod:(NSTimer *)theTimer;
 
 @end
 

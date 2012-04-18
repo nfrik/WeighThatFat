@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* AVCamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* AVCamViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* AVCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* AVCamViewController.m */; };
+		C36FA863153E1E700073FF22 /* AVCamTouchController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36FA862153E1E6F0073FF22 /* AVCamTouchController.m */; };
+		C36FA867153E4E370073FF22 /* DrawShapesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36FA866153E4E360073FF22 /* DrawShapesController.m */; };
 		C3B1C5BD153D492C00980D5E /* PhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C5BB153D492C00980D5E /* PhotoPreviewController.m */; };
 		C3B1C5BE153D492C00980D5E /* PhotoPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B1C5BC153D492C00980D5E /* PhotoPreviewController.xib */; };
 		C3B1C5C9153DF2C200980D5E /* ImageFileOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1C5C8153DF2C200980D5E /* ImageFileOperations.m */; };
@@ -47,6 +49,10 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AVCam_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCam_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AVCam-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AVCam-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C36FA861153E1E6F0073FF22 /* AVCamTouchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamTouchController.h; sourceTree = "<group>"; };
+		C36FA862153E1E6F0073FF22 /* AVCamTouchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamTouchController.m; sourceTree = "<group>"; };
+		C36FA865153E4E360073FF22 /* DrawShapesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawShapesController.h; sourceTree = "<group>"; };
+		C36FA866153E4E360073FF22 /* DrawShapesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawShapesController.m; sourceTree = "<group>"; };
 		C3B1C5BA153D492C00980D5E /* PhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotoPreviewController.h; path = ../PhotoPreviewController.h; sourceTree = "<group>"; };
 		C3B1C5BB153D492C00980D5E /* PhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoPreviewController.m; path = ../PhotoPreviewController.m; sourceTree = "<group>"; };
 		C3B1C5BC153D492C00980D5E /* PhotoPreviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoPreviewController.xib; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 				C3B1C5BB153D492C00980D5E /* PhotoPreviewController.m */,
 				C3B1C5C7153DF2C100980D5E /* ImageFileOperations.h */,
 				C3B1C5C8153DF2C200980D5E /* ImageFileOperations.m */,
+				C36FA861153E1E6F0073FF22 /* AVCamTouchController.h */,
+				C36FA862153E1E6F0073FF22 /* AVCamTouchController.m */,
+				C36FA865153E4E360073FF22 /* DrawShapesController.h */,
+				C36FA866153E4E360073FF22 /* DrawShapesController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -245,6 +255,8 @@
 				C3BD680814FABD7400B2E9C8 /* Accelerometry.m in Sources */,
 				C3B1C5BD153D492C00980D5E /* PhotoPreviewController.m in Sources */,
 				C3B1C5C9153DF2C200980D5E /* ImageFileOperations.m in Sources */,
+				C36FA863153E1E700073FF22 /* AVCamTouchController.m in Sources */,
+				C36FA867153E4E370073FF22 /* DrawShapesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
